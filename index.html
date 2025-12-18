@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>GoalSpot | توقعات مباريات اليوم وتحليلات واقعية</title>
+<meta name="description" content="GoalSpot يقدم توقعات مباريات اليوم، تحليلات واقعية، إحصائيات خفيفة وفرص ربح حقيقية مع أفضل شركات المراهنات.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ===== GLOBAL ===== */
+body{ margin:0; font-family:'Cairo', sans-serif; background:#f4f6f8; color:#222; overflow-x: hidden;}
+a{text-decoration:none !important}
+
+/* ===== HEADER ===== */
+.header{ background:#0b0f19; padding:15px 20px; display:flex; align-items:center; justify-content:space-between; position: relative;}
+.nav a{ color:#fff; margin:0 12px; font-weight:600; }
+.nav a:hover{color:#ffcc00}
+.menu-toggle { display: none; color: #fff; font-size: 22px; cursor: pointer; }
+
+/* ===== LOGO ===== */
+.logo-container{ display:flex; align-items:center; font-size:24px; font-weight:600; }
+.logo-icon{color:#ffcc00;font-size:20px;margin-left:8px}
+.logo-text{color:#fff}
+.logo-spot{color:#ffcc00;font-weight:700}
+
+/* ===== HERO ===== */
+.hero{ background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2") center/cover; padding:80px 20px; text-align:center; }
+.hero-content h1{ background:#000; color:#fff; padding:16px 26px; border-radius:14px; font-size:26px; font-weight:900; line-height:1.6; display:inline-block; }
+/* تعديل وضوح النص */
+.hero-content p{ color:#fff; margin-top:15px; font-size:18px; font-weight: 700; text-shadow: 2px 2px 4px #000; }
+.cta-btn{ display:inline-block; margin-top:25px; background:#ffcc00; color:#000; padding:14px 28px; border-radius:30px; font-weight:800; }
+
+/* ===== ADS (كما هي في الكود الأصلي) ===== */
+.ad{ background:#e0e0e0; padding:20px; margin:30px auto; text-align:center; max-width:1000px; border-radius:10px; font-weight:600; }
+
+/* ===== CONTENT ===== */
+.container{ max-width:1100px; margin:auto; padding:20px; }
+.cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.card{ background:#fff; padding:20px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,.08); }
+.card h3{margin-top:0}
+
+/* ===== FOOTER (التنظيم الجديد) ===== */
+footer{ background:#0b0f19; color:#fff; padding:40px 20px; }
+.footer-wrapper { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
+
+.footer-section { flex: 1; min-width: 250px; margin-bottom: 20px; }
+
+/* اليمين: اللوجو */
+.footer-about { text-align: right; }
+.tagline { display: block; color: #ccc; font-size: 13px; margin-top: 5px; }
+
+/* الوسط: الروابط */
+.footer-links { text-align: center; }
+.footer-links h4 { color: #ffcc00; margin: 0 0 15px 0; font-size: 18px; }
+.footer-links div { display: flex; flex-direction: column; gap: 10px; }
+.footer-links a { color: #ccc; font-weight: 600; font-size: 14px; }
+
+/* اليسار: تابعنا */
+.footer-social { text-align: left; }
+.footer-social h4 { color: #ffcc00; margin: 0 0 15px 0; font-size: 18px; }
+.fb-icon { color: #ccc; font-size: 26px; }
+
+.footer-copy{ margin-top:20px; font-size:14px; color:#ccc; text-align: center; width: 100%; border-top: 1px solid #222; padding-top: 20px; }
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+    .header { justify-content: center; }
+    .menu-toggle { display: block; position: absolute; right: 20px; }
+    .nav { display: none; position: absolute; top: 100%; right: 0; background: #0b0f19; width: 100%; flex-direction: column; padding: 20px 0; z-index: 100; }
+    .nav.active { display: flex; }
+    .nav a { margin: 10px 0; }
+    
+    .footer-wrapper { flex-direction: column; align-items: center; text-align: center; }
+    .footer-section { text-align: center !important; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="menu-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
+  <div class="logo-container">
+    <i class="fas fa-futbol logo-icon"></i>
+    <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+  </div>
+  <nav class="nav" id="nav-list">
+    <a href="#">الرئيسية</a>
+    <a href="#">المباريات</a>
+    <a href="#">التوقعات</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>توقعات مباريات اليوم | تحليلات واقعية قبل الرهان</h1>
+    <p>تحليل مبني على الأرقام، الأداء، والإحصائيات الحديثة</p>
+    <a href="#" class="cta-btn">سجل الآن واحصل على مكافأة</a>
+  </div>
+</section>
+
+<div class="ad">مساحة إعلان Google AdSense (أعلى الصفحة)</div>
+
+<section class="container">
+  <div class="cards">
+    <div class="card">
+      <h3>🔥 توقعات حصرية</h3>
+      <p>أفضل مباريات اليوم مع تحليل ذكي يساعدك على اتخاذ القرار الصحيح.</p>
+    </div>
+    <div class="card">
+      <h3>📊 إحصائيات سريعة</h3>
+      <p>نقدّم لك أرقام مختصرة وواضحة بدون تعقيد.</p>
+    </div>
+    <div class="card">
+      <h3>⚽ مباريات اليوم</h3>
+      <p>جدول مباريات اليوم مع توقيت عربي وتحديث مستمر.</p>
+    </div>
+  </div>
+</section>
+
+<div class="ad">إعلان داخل المحتوى (CTR مرتفع)</div>
+
+<footer>
+  <div class="footer-wrapper">
+    <div class="footer-section footer-about">
+        <div class="logo-container" style="justify-content: flex-start;">
+            <i class="fas fa-futbol logo-icon"></i>
+            <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+        </div>
+        <span class="tagline">توقعات ذكية | قراءة قبل الرهان</span>
+    </div>
+
+    <div class="footer-section footer-links">
+        <h4>روابط مهمة</h4>
+        <div>
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">إخلاء المسؤولية</a>
+            <a href="#">اتصل بنا</a>
+        </div>
+    </div>
+
+    <div class="footer-section footer-social">
+        <h4>تابعنا</h4>
+        <a href="#" class="fb-icon"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    جميع الحقوق محفوظة © 2025 GoalSpot
+  </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('mobile-toggle');
+    const nav = document.getElementById('nav-list');
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
