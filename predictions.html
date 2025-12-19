@@ -14,11 +14,12 @@ body{
   font-family:'Cairo',sans-serif;
   background:#f0f2f5;
   color:#000;
+  overflow-x: hidden;
 }
 a{text-decoration:none;color:inherit}
 .container{max-width:1200px;margin:auto;padding:0 15px}
 
-/* HEADER */
+/* ===== HEADER ===== */
 header{
   background:#000;
   color:#fff;
@@ -30,15 +31,45 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px;
+  padding:12px 20px; /* تعديل الـ Padding ليتناسب مع شكل المباريات */
 }
-.logo{
-  font-size:26px;
-  font-weight:900;
+
+/* توحيد شكل اللوغو مع الفوتر */
+.logo-container{
+  display:flex;
+  align-items:center;
+  font-family:'Inter',sans-serif;
 }
-.logo span{color:#ffcc00}
-nav a{margin:0 12px;font-weight:700; color: #fff;}
-nav a:hover{color:#ffcc00}
+.logo-icon{
+  color:#ffcc00;
+  font-size:20px;
+  margin-left:8px;
+}
+.logo-text{
+  color:#fff;
+  font-size:24px;
+}
+.logo-spot{
+  color:#ffcc00;
+  font-weight:700;
+}
+
+/* زر القائمة للهاتف */
+.menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Navigation الحاسوب */
+nav.nav a{
+  margin:0 12px;
+  font-weight:700; 
+  color: #fff;
+  text-decoration:none;
+}
+nav.nav a:hover{color:#ffcc00}
 
 /* PAGE TITLE */
 .page-title{
@@ -101,9 +132,11 @@ nav a:hover{color:#ffcc00}
   background:#ffcc00;
   color:#000;
   padding:12px 30px;
+  border-radius:4px;
   display:inline-block;
   margin-top:10px;
   font-size:16px;
+  font-weight: 700;
 }
 
 /* ADS */
@@ -129,7 +162,7 @@ nav a:hover{color:#ffcc00}
   margin-bottom:10px;
 }
 
-/* ===== FOOTER (تم استبداله بفوتر صفحة المباريات) ===== */
+/* ===== FOOTER ===== */
 footer{
   background:#222;
   color:#ccc;
@@ -154,9 +187,41 @@ footer .logo-spot{color:#ffcc00;font-weight:700}
   padding-top:10px;
 }
 
+/* ===== MEDIA QUERIES الهاتف ===== */
 @media(max-width:768px){
   .grid{grid-template-columns:1fr}
-  nav{display:none}
+  
+  .header-inner {
+    justify-content: center; /* اللوجو في الوسط */
+  }
+  
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px; /* المنيو في اليمين */
+  }
+  
+  nav.nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #000;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #222;
+  }
+  
+  nav.nav.active {
+    display: flex;
+  }
+  
+  nav.nav a {
+    margin: 15px 0;
+    margin-right: 0;
+  }
 }
 </style>
 </head>
@@ -165,11 +230,18 @@ footer .logo-spot{color:#ffcc00;font-weight:700}
 
 <header>
   <div class="container header-inner">
-    <div class="logo">Goal<span>Spot</span></div>
-    <nav>
+    <div class="menu-toggle" id="mobile-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <a href="index.html" class="logo-container">
+      <i class="fas fa-futbol logo-icon"></i>
+      <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+    </a>
+
+    <nav class="nav" id="nav-list">
       <a href="index.html">الرئيسية</a>
       <a href="matches.html">المباريات</a>
-      <a href="predictions.html">التوقعات</a>
     </nav>
   </div>
 </header>
@@ -232,16 +304,6 @@ footer .logo-spot{color:#ffcc00;font-weight:700}
 </div>
 
 <footer>
-  <script>
-const toggle = document.getElementById('mobile-toggle');
-const nav = document.getElementById('nav-list');
-
-if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-}
-</script>
   <div class="footer-logo-container">
     <i class="fas fa-futbol logo-icon"></i>
     <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
@@ -252,6 +314,13 @@ if (toggle && nav) {
   </div>
 </footer>
 
+<script>
+const toggle = document.getElementById('mobile-toggle');
+const nav = document.getElementById('nav-list');
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+</script>
+
 </body>
 </html>
-
