@@ -232,6 +232,16 @@ footer .logo-spot{color:#ffcc00;font-weight:700}
 </div>
 
 <footer>
+  <script>
+const toggle = document.getElementById('mobile-toggle');
+const nav = document.getElementById('nav-list');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+}
+</script>
   <div class="footer-logo-container">
     <i class="fas fa-futbol logo-icon"></i>
     <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
