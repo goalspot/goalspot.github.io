@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>سياسة الخصوصية | GoalSpot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Cairo',sans-serif;
+  background:#f0f2f5;
+  color:#333;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1000px;margin:auto;padding:0 20px}
+
+/* ===== HEADER ===== */
+header{
+  background:#000;
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+}
+.logo-container{
+  display:flex;
+  align-items:center;
+  font-family:'Inter',sans-serif;
+}
+.logo-icon{color:#ffcc00; font-size:20px; margin-left:8px;}
+.logo-text{color:#fff; font-size:24px;}
+.logo-spot{color:#ffcc00; font-weight:700;}
+
+.menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+nav.nav a{
+  margin:0 12px;
+  font-weight:700; 
+  color: #fff;
+  transition: 0.3s;
+}
+nav.nav a:hover{color:#ffcc00}
+
+/* ===== PRIVACY CONTENT ===== */
+.privacy-wrapper{
+  background:#fff;
+  margin:40px 0;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+.privacy-wrapper h1{
+  font-size:32px;
+  font-weight:900;
+  color:#000;
+  margin-bottom:10px;
+  border-right:6px solid #ffcc00;
+  padding-right:15px;
+}
+.update-date{
+  color:#888;
+  font-size:14px;
+  margin-bottom:30px;
+  display: block;
+}
+.privacy-section{
+  margin-bottom:35px;
+}
+.privacy-section h2{
+  font-size:22px;
+  color:#000;
+  margin-bottom:15px;
+  font-weight: 800;
+}
+.privacy-section p{
+  font-size:16px;
+  color:#444;
+  margin-bottom:15px;
+  text-align: justify;
+}
+.privacy-section ul{
+  padding-right:25px;
+  margin-bottom:15px;
+  list-style-type: square;
+}
+.privacy-section ul li{
+  margin-bottom:10px;
+  color: #555;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#222;
+  color:#ccc;
+  padding:40px 20px;
+}
+.footer-logo-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:20px;
+}
+footer .logo-icon{color:#ffcc00;font-size:22px; margin-left:8px;}
+footer .logo-text{color:#fff;font-size:26px}
+footer .logo-spot{color:#ffcc00;font-weight:700}
+
+.footer-nav-split {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 25px;
+}
+.footer-nav-split a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.footer-nav-split a:hover {
+  color: #ffcc00;
+}
+
+.copyright{
+  text-align: center;
+  font-size:14px;
+  border-top:1px solid #444;
+  padding-top:15px;
+  color: #888;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .header-inner { justify-content: center; }
+  .menu-toggle { display: block; position: absolute; right: 20px; }
+  nav.nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #000;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #222;
+  }
+  nav.nav.active { display: flex; }
+  nav.nav a { margin: 15px 0; }
+  
+  .privacy-wrapper{ padding:25px 15px; margin:20px 10px; }
+  .privacy-wrapper h1{ font-size: 24px; }
+  
+  .footer-nav-split {
+    gap: 40px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="menu-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
+    <a href="index.html" class="logo-container">
+      <i class="fas fa-futbol logo-icon"></i>
+      <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+    </a>
+    <nav class="nav" id="nav-list">
+      <a href="index.html">الرئيسية</a>
+      <a href="matches.html">المباريات</a>
+      <a href="predictions.html">التوقعات</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <article class="privacy-wrapper">
+    <h1>سياسة الخصوصية</h1>
+    <span class="update-date">آخر تحديث: 19 ديسمبر 2025</span>
+
+    <div class="privacy-section">
+      <h2>1. مقدمة عامة</h2>
+      <p>في <strong>GoalSpot</strong>، نعتبر خصوصية زوارنا من أهم أولوياتنا. توضح وثيقة سياسة الخصوصية هذه أنواع المعلومات الشخصية التي يتم جمعها وتسجيلها وكيفية استخدامنا لها. نحن نلتزم بالمعايير الدولية لحماية البيانات لضمان تجربة تصفح آمنة وموثوقة.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>2. ملفات تعريف الارتباط (Cookies)</h2>
+      <p>مثل أي موقع ويب آخر، يستخدم موقعنا "ملفات تعريف الارتباط". تُستخدم هذه الملفات لتخزين المعلومات بما في ذلك تفضيلات الزوار، والصفحات التي تم الوصول إليها. تهدف هذه المعلومات إلى تحسين تجربة المستخدم من خلال تخصيص محتوى صفحة الويب الخاصة بنا بناءً على نوع متصفح الزوار و/أو معلومات أخرى.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>3. سياسة إعلانات Google AdSense</h2>
+      <p>تعد Google أحد الموردين الخارجيين على موقعنا. وهي تستخدم ملفات تعريف الارتباط، المعروفة باسم ملفات تعريف الارتباط DART، لعرض الإعلانات لزوار موقعنا بناءً على زيارتهم لموقع GoalSpot ومواقع أخرى على الإنترنت. ومع ذلك، يمكن للزوار اختيار رفض استخدام ملفات تعريف الارتباط DART عن طريق زيارة سياسة الخصوصية الخاصة بإعلانات Google وشبكة المحتوى.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>4. المعلومات التي نجمعها وكيفية استخدامها</h2>
+      <p>نحن نجمع معلومات معينة لتقديم خدمة أفضل، بما في ذلك:</p>
+      <ul>
+        <li><strong>معلومات السجل:</strong> تشمل عناوين بروتوكول الإنترنت (IP)، نوع المتصفح، مزود خدمة الإنترنت (ISP)، طابع التاريخ والوقت، وصفحات الإحالة/الخروج.</li>
+        <li><strong>تحليل الاستخدام:</strong> نستخدم هذه البيانات لتحليل الاتجاهات وإدارة الموقع وتتبع حركة المستخدمين لضمان تقديم محتوى رياضي يهمهم.</li>
+      </ul>
+    </div>
+
+    <div class="privacy-section">
+      <h2>5. حماية خصوصية الأطفال</h2>
+      <p>جزء آخر من أولوياتنا هو إضافة حماية للأطفال أثناء استخدام الإنترنت. نحن نشجع الآباء والأوصياء على مراقبة نشاط أطفالهم عبر الإنترنت. لا يجمع GoalSpot عن علم أي معلومات تعريف شخصية من الأطفال دون سن 13 عاماً.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2>6. الموافقة</h2>
+      <p>باستخدام موقعنا، فإنك توافق بموجب هذا على سياسة الخصوصية الخاصة بنا وتوافق على شروطها وأحكامها. نحن نحتفظ بالحق في تحديث هذه السياسة في أي وقت لضمان تماشيها مع التطورات التقنية والقانونية.</p>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="footer-logo-container">
+    <i class="fas fa-futbol logo-icon"></i>
+    <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+  </div>
+
+  <div class="footer-nav-split">
+    <a href="disclaimer.html">إخلاء المسؤولية</a>
+    <a href="contact.html">اتصل بنا</a>
+  </div>
+
+  <div class="copyright">
+    © 2025 GoalSpot – جميع الحقوق محفوظة
+  </div>
+</footer>
+
+<script>
+const toggle = document.getElementById('mobile-toggle');
+const nav = document.getElementById('nav-list');
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
