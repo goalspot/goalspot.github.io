@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>GoalSpot | توقعات اليوم الحصرية</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Cairo',sans-serif;
+  background:#f0f2f5;
+  color:#000;
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:auto;padding:0 15px}
+
+/* HEADER */
+header{
+  background:#000;
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+}
+.logo{
+  font-size:26px;
+  font-weight:900;
+}
+.logo span{color:#ffcc00}
+nav a{margin:0 12px;font-weight:700; color: #fff;}
+nav a:hover{color:#ffcc00}
+
+/* PAGE TITLE */
+.page-title{
+  background:#fff;
+  padding:20px;
+  margin:20px 0;
+  font-size:22px;
+  font-weight:900;
+  border-right:6px solid #ffcc00;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:20px;
+}
+
+/* PREDICTION CARD */
+.prediction-card{
+  background:#fff;
+  border-radius:8px;
+  margin-bottom:20px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  overflow:hidden;
+}
+.prediction-header{
+  background:#000;
+  color:#fff;
+  padding:12px;
+  font-weight:900;
+  font-size:18px;
+}
+.prediction-body{
+  padding:15px;
+}
+.confidence{
+  background:#ffcc00;
+  display:inline-block;
+  padding:6px 12px;
+  font-weight:900;
+  margin:10px 0;
+}
+.analysis{
+  color:#333;
+  line-height:1.7;
+  margin-bottom:15px;
+}
+
+/* CTA 1XBET */
+.cta{
+  background:#0d47a1;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  font-weight:900;
+  font-size:18px;
+}
+.cta a{
+  background:#ffcc00;
+  color:#000;
+  padding:12px 30px;
+  display:inline-block;
+  margin-top:10px;
+  font-size:16px;
+}
+
+/* ADS */
+.ad{
+  background:#e0e0e0;
+  border:2px dashed #aaa;
+  text-align:center;
+  padding:20px;
+  margin:20px 0;
+  font-weight:700;
+}
+
+/* SIDEBAR */
+.widget{
+  background:#fff;
+  padding:15px;
+  border-radius:8px;
+  margin-bottom:20px;
+}
+.widget h3{
+  border-right:5px solid #ffcc00;
+  padding-right:10px;
+  margin-bottom:10px;
+}
+
+/* ===== FOOTER (تم استبداله بفوتر صفحة المباريات) ===== */
+footer{
+  background:#222;
+  color:#ccc;
+  padding:40px 20px;
+  margin-top:40px;
+}
+.footer-logo-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:15px;
+}
+footer .logo-icon{color:#ffcc00;font-size:22px; margin-left:8px;}
+footer .logo-text{color:#fff;font-size:26px}
+footer .logo-spot{color:#ffcc00;font-weight:700}
+
+.copyright{
+  text-align:center;
+  margin-top:20px;
+  font-size:14px;
+  border-top:1px solid #444;
+  padding-top:10px;
+}
+
+@media(max-width:768px){
+  .grid{grid-template-columns:1fr}
+  nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">Goal<span>Spot</span></div>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="matches.html">المباريات</a>
+      <a href="predictions.html">التوقعات</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-title">🔥 توقعات اليوم الحصرية</div>
+
+  <div class="grid">
+    <main>
+      <div class="prediction-card">
+        <div class="prediction-header">ريال مدريد × برشلونة</div>
+        <div class="prediction-body">
+          <span class="confidence">نسبة الثقة: 78%</span>
+          <p class="analysis">
+            المباراة متوازنة لكن ريال مدريد يدخل بأفضلية الأرض،
+            مع غيابات مؤثرة في دفاع برشلونة.
+            الإحصائيات تشير إلى مباراة مفتوحة مع فرص تهديف عالية.
+          </p>
+        </div>
+        <div class="cta">
+          التوقع: فوز ريال مدريد + أكثر من 2.5 هدف<br>
+          <a href="#" target="_blank">سجّل وطبّق التوقع في 1xBet</a>
+        </div>
+      </div>
+
+      <div class="ad">إعلان Google AdSense داخل التوقعات</div>
+
+      <div class="prediction-card">
+        <div class="prediction-header">مانشستر سيتي × ليفربول</div>
+        <div class="prediction-body">
+          <span class="confidence">نسبة الثقة: 65%</span>
+          <p class="analysis">
+            سيتي أقوى هجومياً على ملعبه،
+            لكن ليفربول يملك سرعة المرتدات.
+            الخيار الآمن هو تسجيل الفريقين.
+          </p>
+        </div>
+        <div class="cta">
+          التوقع: الفريقان يسجلان<br>
+          <a href="#" target="_blank">سجّل وراهن الآن في 1xBet</a>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <div class="widget">
+        <h3>⭐ رهان اليوم</h3>
+        <p>ريال مدريد يفوز</p>
+        <strong>ثقة عالية 🔥</strong>
+      </div>
+
+      <div class="widget">
+        <h3>📊 نصيحة</h3>
+        <p>لا تراهن بمبلغ كبير، العب بعقل.</p>
+      </div>
+
+      <div class="ad">إعلان AdSense جانبي</div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo-container">
+    <i class="fas fa-futbol logo-icon"></i>
+    <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+  </div>
+
+  <div class="copyright">
+    © 2025 GoalSpot – جميع الحقوق محفوظة
+  </div>
+</footer>
+
+</body>
+</html>
 
