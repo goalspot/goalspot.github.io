@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>اتصل بنا | GoalSpot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  /* ... (نفس الستايل السابق) ... */
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Cairo',sans-serif; background:#f0f2f5; color:#333; line-height:1.8; overflow-x:hidden;}
+  a{text-decoration:none; color:inherit}
+  .container{max-width:1000px; margin:auto; padding:0 20px}
+  header{background:#000; color:#fff; position:sticky; top:0; z-index:999;}
+  .header-inner{display:flex; justify-content:space-between; align-items:center; padding:12px 20px;}
+  .logo-container{display:flex; align-items:center; font-family:'Inter',sans-serif;}
+  .logo-icon{color:#ffcc00; font-size:20px; margin-left:8px;}
+  .logo-text{color:#fff; font-size:24px;}
+  .logo-spot{color:#ffcc00; font-weight:700;}
+  .menu-toggle {display:none; color:#fff; font-size:22px; cursor:pointer;}
+  nav.nav a{margin:0 12px; font-weight:700; color:#fff; transition:0.3s;}
+  nav.nav a:hover{color:#ffcc00}
+  .content-wrapper{background:#fff; margin:40px 0; padding:60px 40px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.05); text-align:center;}
+  .content-wrapper h1{font-size:32px; font-weight:900; color:#000; margin-bottom:20px;}
+  .contact-card{background:#f9f9f9; padding:30px; border-radius:8px; border:2px dashed #ffcc00; display:inline-block; width:100%; max-width:500px;}
+  .contact-card i{font-size:40px; color:#ffcc00; margin-bottom:15px;}
+  .contact-card p{font-size:18px; font-weight:700; color:#222; margin-bottom:10px;}
+  .contact-email{font-size:20px; color:#0d47a1; font-weight:900; word-break:break-all;}
+  footer{background:#222; color:#ccc; padding:40px 20px;}
+  .footer-logo-container{display:flex; justify-content:center; align-items:center; margin-bottom:20px;}
+  footer .logo-icon{color:#ffcc00; font-size:22px; margin-left:8px;}
+  footer .logo-text{color:#fff; font-size:26px}
+  footer .logo-spot{color:#ffcc00; font-weight:700}
+  .footer-nav-split{display:flex; justify-content:center; align-items:center; gap:60px; margin-bottom:25px;}
+  .footer-nav-split a{color:#fff; font-weight:700; font-size:16px; transition:0.3s;}
+  .footer-nav-split a:hover{color:#ffcc00}
+  .copyright{text-align:center; font-size:14px; border-top:1px solid #444; padding-top:15px; color:#888;}
+  @media(max-width:768px){
+    .header-inner{justify-content:center;}
+    .menu-toggle{display:block; position:absolute; right:20px;}
+    nav.nav{display:none; position:absolute; top:100%; right:0; background:#000; width:100%; flex-direction:column; padding:20px 0; text-align:center;}
+    nav.nav.active{display:flex;}
+    nav.nav a{margin:15px 0;}
+    .content-wrapper{padding:40px 20px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="menu-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
+    <a href="index.html" class="logo-container">
+      <i class="fas fa-futbol logo-icon"></i>
+      <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+    </a>
+    <nav class="nav" id="nav-list">
+      <a href="index.html">الرئيسية</a>
+      <a href="matches.html">المباريات</a>
+      <a href="predictions.html">التوقعات</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="content-wrapper">
+    <h1>اتصل بنا</h1>
+    <p style="margin-bottom:30px; color:#666;">إذا كان لديك أي استفسار، اقتراح، أو رغبة في التعاون الإعلاني، لا تتردد في مراسلتنا.</p>
+    
+    <div class="contact-card">
+      <i class="fas fa-envelope-open-text"></i>
+      <p>البريد الإلكتروني الرسمي:</p>
+      <div class="contact-email">goalspotnews@gmail.com</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo-container">
+    <i class="fas fa-futbol logo-icon"></i>
+    <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+  </div>
+  <div class="footer-nav-split">
+    <a href="privacy.html">سياسة الخصوصية</a>
+    <a href="disclaimer.html">إخلاء المسؤولية</a>
+  </div>
+  <div class="copyright">© 2025 GoalSpot – جميع الحقوق محفوظة</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('mobile-toggle');
+  const nav = document.getElementById('nav-list');
+  toggle.addEventListener('click', () => { nav.classList.toggle('active'); });
+</script>
+</body>
+</html>
