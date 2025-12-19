@@ -1,1 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>مباريات اليوم | GoalSpot</title>
+<meta name="description" content="مباريات اليوم مباشرة، تنبيهات، قراءة سريعة وإحصائيات خفيفة قبل انطلاق المواجهات.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Cairo',sans-serif;
+  background:#f5f6fa;
+  color:#000;
+}
+
+/* ===== HEADER (نفس التوقعات) ===== */
+header{
+  background:#000;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo-container{
+  display:flex;
+  align-items:center;
+  font-family:'Inter',sans-serif;
+}
+.logo-icon{
+  color:#ffcc00;
+  font-size:20px;
+  margin-left:8px;
+}
+.logo-text{
+  color:#fff;
+  font-size:24px;
+}
+.logo-spot{
+  color:#ffcc00;
+  font-weight:700;
+}
+nav a{
+  color:#fff;
+  margin-right:20px;
+  font-weight:700;
+  text-decoration:none;
+}
+nav a:hover{color:#ffcc00}
+
+/* ===== CONTENT ===== */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 15px;
+}
+.page-title{
+  font-size:28px;
+  font-weight:900;
+  margin-bottom:8px;
+}
+.page-subtitle{
+  color:#555;
+  margin-bottom:25px;
+}
+
+/* ALERT */
+.alert{
+  background:#fff3cd;
+  color:#856404;
+  padding:14px;
+  border-radius:10px;
+  font-weight:700;
+  margin-bottom:25px;
+}
+
+/* MATCH CARD (نفس Card ديال التوقعات) */
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:22px;
+  margin-bottom:30px;
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+}
+.match-title{
+  font-size:21px;
+  font-weight:900;
+}
+.badge{
+  background:#d32f2f;
+  color:#fff;
+  padding:5px 14px;
+  border-radius:20px;
+  font-size:13px;
+  display:inline-block;
+  margin-top:10px;
+}
+.badge.today{background:#2E7D32}
+.badge.upcoming{background:#1976d2}
+
+.analysis{
+  margin-top:15px;
+  line-height:1.9;
+  color:#333;
+}
+
+.stats{
+  background:#f1f3f6;
+  padding:14px;
+  border-radius:10px;
+  margin-top:15px;
+  font-size:14px;
+  color:#444;
+  border-right:4px solid #2E7D32;
+}
+
+/* CTA خفيف لرفع CTR */
+.cta{
+  margin-top:20px;
+  text-align:center;
+}
+.cta a{
+  background:#ffcc00;
+  color:#000;
+  padding:12px 30px;
+  border-radius:30px;
+  font-weight:900;
+  display:inline-block;
+  text-decoration:none;
+}
+.trust{
+  font-size:13px;
+  color:#777;
+  margin-top:6px;
+}
+
+/* ===== FOOTER (نفس التوقعات) ===== */
+footer{
+  background:#222;
+  color:#ccc;
+  padding:40px 20px;
+  margin-top:40px;
+}
+.footer-logo-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:15px;
+}
+footer .logo-icon{color:#ffcc00;font-size:22px}
+footer .logo-text{color:#fff;font-size:26px}
+footer .logo-spot{color:#ffcc00;font-weight:700}
+
+.copyright{
+  text-align:center;
+  margin-top:20px;
+  font-size:14px;
+  border-top:1px solid #444;
+  padding-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo-container">
+    <i class="fas fa-futbol logo-icon"></i>
+    <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+  </div>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="matches.html">المباريات</a>
+    <a href="tips.html">التوقعات</a>
+  </nav>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <div class="page-title">⚽ مباريات اليوم</div>
+  <div class="page-subtitle">مباشر – تنبيهات – قراءة ذكية قبل البداية</div>
+
+  <div class="alert">
+    🔔 تنبيه: كلاسيكو ريال مدريد × برشلونة ينطلق بعد أقل من ساعة
+  </div>
+
+  <!-- LIVE -->
+  <div class="card">
+    <div class="match-title">باريس سان جيرمان × ميلان</div>
+    <span class="badge">مباشر الآن</span>
+
+    <div class="analysis">
+      المباراة مفتوحة نسبيًا، باريس يضغط عاليًا بينما ميلان يعتمد على المرتدات.
+    </div>
+
+    <div class="stats">
+      ⏱ الدقيقة: 62<br>
+      ⚽ النتيجة: 2 - 1<br>
+      📊 الاستحواذ: 58% | التسديدات: 11
+    </div>
+  </div>
+
+  <!-- TODAY -->
+  <div class="card">
+    <div class="match-title">ريال مدريد × برشلونة</div>
+    <span class="badge today">مباراة اليوم</span>
+
+    <div class="analysis">
+      كلاسيكو منتظر، تاريخ المواجهات يشير إلى أهداف في الشوط الثاني.
+    </div>
+
+    <div class="stats">
+      🕘 التوقيت: 21:00<br>
+      🔍 قراءة سريعة: إيقاع مرتفع واحتمال تسجيل الطرفين
+    </div>
+
+    <div class="cta">
+      <a href="tips.html">شاهد التوقع والتحليل</a>
+      <div class="trust">محتوى تحليلي – بدون مبالغة</div>
+    </div>
+  </div>
+
+  <!-- UPCOMING -->
+  <div class="card">
+    <div class="match-title">مانشستر سيتي × آرسنال</div>
+    <span class="badge upcoming">قادم</span>
+
+    <div class="analysis">
+      سيتي يفرض أسلوبه داخل ملعبه، وآرسنال يلعب بحذر أمام الكبار.
+    </div>
+
+    <div class="stats">
+      🕗 غدًا 19:30<br>
+      📈 توقع الأداء: استحواذ أعلى لسيتي
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo-container">
+    <i class="fas fa-futbol logo-icon"></i>
+    <span class="logo-text">Goal<span class="logo-spot">Spot</span></span>
+  </div>
+
+  <div class="copyright">
+    © 2025 GoalSpot – جميع الحقوق محفوظة
+  </div>
+</footer>
+
+</body>
+</html>
