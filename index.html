@@ -42,7 +42,7 @@ a{text-decoration:none !important}
 .card{ background:#fff; padding:20px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,.08); }
 .card h3{margin-top:0}
 
-/* ===== FOOTER (التنظيم الجديد) ===== */
+/* ===== FOOTER ===== */
 footer{ background:#0b0f19; color:#fff; padding:40px 20px; }
 .footer-wrapper { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
 
@@ -65,9 +65,9 @@ footer{ background:#0b0f19; color:#fff; padding:40px 20px; }
 
 .footer-copy{ margin-top:20px; font-size:14px; color:#ccc; text-align: center; width: 100%; border-top: 1px solid #222; padding-top: 20px; }
 
-/* ===== MEDIA QUERIES ===== */
+/* ===== MEDIA QUERIES (التعديل المطلوب للهاتف فقط) ===== */
 @media (max-width: 768px) {
-    .header { justify-content: center; }
+    .header { justify-content: center; } /* اللوجو في الوسط في الهيدر */
     .menu-toggle { display: block; position: absolute; right: 20px; }
     .nav { display: none; position: absolute; top: 100%; right: 0; background: #0b0f19; width: 100%; flex-direction: column; padding: 20px 0; z-index: 100; }
     .nav.active { display: flex; }
@@ -75,6 +75,9 @@ footer{ background:#0b0f19; color:#fff; padding:40px 20px; }
     
     .footer-wrapper { flex-direction: column; align-items: center; text-align: center; }
     .footer-section { text-align: center !important; }
+    /* اللوجو في الوسط في الفوتر للهاتف */
+    .footer-about { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    .footer-about .logo-container { justify-content: center; }
 }
 </style>
 </head>
